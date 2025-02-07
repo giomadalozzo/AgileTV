@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		299F67572D565BDF0015C99B /* AgileTV_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299F67562D565BDF0015C99B /* AgileTV_iOSApp.swift */; };
-		299F67592D565BDF0015C99B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299F67582D565BDF0015C99B /* ContentView.swift */; };
+		299F67592D565BDF0015C99B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299F67582D565BDF0015C99B /* HomeView.swift */; };
 		299F675B2D565BE20015C99B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 299F675A2D565BE20015C99B /* Assets.xcassets */; };
 		299F675E2D565BE20015C99B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 299F675D2D565BE20015C99B /* Preview Assets.xcassets */; };
 		299F67682D565BE20015C99B /* AgileTV_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299F67672D565BE20015C99B /* AgileTV_iOSTests.swift */; };
@@ -36,7 +36,7 @@
 /* Begin PBXFileReference section */
 		299F67532D565BDF0015C99B /* AgileTV_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AgileTV_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		299F67562D565BDF0015C99B /* AgileTV_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgileTV_iOSApp.swift; sourceTree = "<group>"; };
-		299F67582D565BDF0015C99B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		299F67582D565BDF0015C99B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		299F675A2D565BE20015C99B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		299F675D2D565BE20015C99B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		299F67632D565BE20015C99B /* AgileTV_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AgileTV_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,7 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				299F67562D565BDF0015C99B /* AgileTV_iOSApp.swift */,
-				299F67582D565BDF0015C99B /* ContentView.swift */,
+				299F67582D565BDF0015C99B /* HomeView.swift */,
 				299F675A2D565BE20015C99B /* Assets.xcassets */,
 				299F675C2D565BE20015C99B /* Preview Content */,
 			);
@@ -257,7 +257,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				299F67592D565BDF0015C99B /* ContentView.swift in Sources */,
+				299F67592D565BDF0015C99B /* HomeView.swift in Sources */,
 				299F67572D565BDF0015C99B /* AgileTV_iOSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

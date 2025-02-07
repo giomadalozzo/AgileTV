@@ -11,7 +11,7 @@ import SwiftUI
 struct AgileTV_iOSApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView()
         }
     }
 }

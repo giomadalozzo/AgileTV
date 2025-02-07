@@ -14,6 +14,7 @@
 		299F67682D565BE20015C99B /* AgileTV_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299F67672D565BE20015C99B /* AgileTV_iOSTests.swift */; };
 		299F67722D565BE20015C99B /* AgileTV_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299F67712D565BE20015C99B /* AgileTV_iOSUITests.swift */; };
 		299F67742D565BE20015C99B /* AgileTV_iOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299F67732D565BE20015C99B /* AgileTV_iOSUITestsLaunchTests.swift */; };
+		299F67832D566E8C0015C99B /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299F67822D566E8C0015C99B /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		299F676D2D565BE20015C99B /* AgileTV_iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AgileTV_iOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		299F67712D565BE20015C99B /* AgileTV_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgileTV_iOSUITests.swift; sourceTree = "<group>"; };
 		299F67732D565BE20015C99B /* AgileTV_iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgileTV_iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		299F67822D566E8C0015C99B /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				299F67562D565BDF0015C99B /* AgileTV_iOSApp.swift */,
 				299F67582D565BDF0015C99B /* HomeView.swift */,
+				299F67822D566E8C0015C99B /* ProfileView.swift */,
 				299F675A2D565BE20015C99B /* Assets.xcassets */,
 				299F675C2D565BE20015C99B /* Preview Content */,
 			);
@@ -258,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				299F67592D565BDF0015C99B /* HomeView.swift in Sources */,
+				299F67832D566E8C0015C99B /* ProfileView.swift in Sources */,
 				299F67572D565BDF0015C99B /* AgileTV_iOSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

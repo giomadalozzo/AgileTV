@@ -23,6 +23,8 @@
 		299F67962D5708110015C99B /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299F67952D5708110015C99B /* EmptyStateView.swift */; };
 		299F67992D570F200015C99B /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299F67982D570F200015C99B /* AvatarView.swift */; };
 		299F679C2D572F0A0015C99B /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299F679B2D572F0A0015C99B /* APIError.swift */; };
+		299F67A02D57E7890015C99B /* APIServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299F679F2D57E7890015C99B /* APIServiceProtocol.swift */; };
+		299F67A22D57E87C0015C99B /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299F67A12D57E87C0015C99B /* APIService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		299F67952D5708110015C99B /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
 		299F67982D570F200015C99B /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
 		299F679B2D572F0A0015C99B /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		299F679F2D57E7890015C99B /* APIServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceProtocol.swift; sourceTree = "<group>"; };
+		299F67A12D57E87C0015C99B /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +116,7 @@
 		299F67552D565BDF0015C99B /* AgileTV_iOS */ = {
 			isa = PBXGroup;
 			children = (
+				299F679D2D57E7360015C99B /* Service */,
 				299F679A2D572EE30015C99B /* Enum */,
 				299F678D2D569D9A0015C99B /* Root */,
 				299F678C2D569D810015C99B /* Model */,
@@ -199,6 +204,23 @@
 				299F679B2D572F0A0015C99B /* APIError.swift */,
 			);
 			path = Enum;
+			sourceTree = "<group>";
+		};
+		299F679D2D57E7360015C99B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				299F67A12D57E87C0015C99B /* APIService.swift */,
+				299F679E2D57E7570015C99B /* Protocol */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		299F679E2D57E7570015C99B /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				299F679F2D57E7890015C99B /* APIServiceProtocol.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -344,8 +366,10 @@
 				299F67892D569D490015C99B /* User.swift in Sources */,
 				299F67942D5707A20015C99B /* RepositoryListView.swift in Sources */,
 				299F67872D569D3E0015C99B /* Repository.swift in Sources */,
+				299F67A02D57E7890015C99B /* APIServiceProtocol.swift in Sources */,
 				299F67852D5699220015C99B /* ViewModel.swift in Sources */,
 				299F67992D570F200015C99B /* AvatarView.swift in Sources */,
+				299F67A22D57E87C0015C99B /* APIService.swift in Sources */,
 				299F67572D565BDF0015C99B /* AgileTV_iOSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

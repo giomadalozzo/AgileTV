@@ -15,7 +15,7 @@ struct ProfileView: View {
                 AvatarView(avatarURL: viewModel.avatarURL)
                 Text(username)
                     .padding()
-                if viewModel.isEmpty {
+                if viewModel.repositories.isEmpty {
                     EmptyStateView()
                 } else {
                     RepositoryListView(repositories: viewModel.repositories)
@@ -39,14 +39,16 @@ struct ProfileView: View {
                 }
             })
             .onAppear {
-                viewModel.fetchRepositories(username: self.username)
+                Task {
+                    await viewModel.fetchRepositories(for: self.username)
+                }
             }
             .alert(item: $viewModel.error) { error in
                 Alert(
                     title: Text("Oops!"),
-                    message: Text(error.errorDescription),
+                    message: Text(error.errorDescription ?? "A network error has occurred. Check your Internet connection and try again later."),
                     dismissButton: Alert.Button.default(
-                        Text("OK"), action: { presentationMode.wrappedValue.dismiss()}
+                        Text("OK"), action: { presentationMode.wrappedValue.dismiss() }
                         )
                 )
             }

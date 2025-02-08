@@ -1,7 +1,13 @@
 import Foundation
 
-struct Repository {
-    //TODO: Checar na API se language pode ser um array.
+struct Repository: Codable {
     let name: String
-    let language: String
+    let owner: User
+    let language: String?
+
+    enum CodingKeys: String, CodingKey {
+        case name
+        case owner
+        case language
+    }
 }

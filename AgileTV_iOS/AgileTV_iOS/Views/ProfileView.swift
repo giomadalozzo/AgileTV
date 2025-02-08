@@ -1,49 +1,46 @@
 import SwiftUI
-import UIKit
 
 struct ProfileView: View {
-    var name = "Name"
-    var repo = "Repo"
-    var language = "Language"
+    @Binding var username: String
+    @StateObject var viewModel = ViewModel()
     @Environment(\.presentationMode) var presentationMode
 
-    init() {
-        UINavigationBar.appearance()
+    init(username: Binding<String>) {
+        self._username = username
     }
 
     var body: some View {
         VStack{
-                Image(systemName: "person.fill")
-                    .resizable()
-                    .frame(width: 100, height: 100)
+            if viewModel.avatarLoaded {
+                AvatarView(avatarURL: viewModel.avatarURL)
+                Text(username)
                     .padding()
-                    .foregroundStyle(Color.white)
-                    .background(Color.secondary)
-                    .clipShape(Circle())
-                Text(name)
-                    .padding()
-            ScrollView {
-                ForEach(0..<20) { x in
-                    Text("\(x)")
-                    Divider()
+                if viewModel.isEmpty {
+                    EmptyStateView()
+                } else {
+                    RepositoryListView(repositories: viewModel.repositories)
                 }
-            }.background(.white)
-                .border(.separator)
-        }.ignoresSafeArea()
+            } else {
+                ProgressView()
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+            }
+
+        }.frame( maxWidth: .infinity)
+            .edgesIgnoringSafeArea(.all)
             .padding(.top)
             .background(.ultraThinMaterial)
             .navigationBarBackButtonHidden(true)
             .navigationBarItems(leading: Button(action: {
-                            presentationMode.wrappedValue.dismiss()
-                        }) {
-                            HStack {
-                                Image(systemName: "chevron.left")
-                                Text("Back")
-                            }
-                        })
+                presentationMode.wrappedValue.dismiss()
+            }) {
+                HStack {
+                    Image(systemName: "chevron.left")
+                    Text("Back")
+                }
+            })
+            .onAppear {
+                viewModel.fetchRepositories(username: self.username)
+            }
     }
 }
 
-#Preview {
-    ProfileView()
-}

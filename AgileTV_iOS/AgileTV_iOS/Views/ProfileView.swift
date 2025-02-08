@@ -41,6 +41,15 @@ struct ProfileView: View {
             .onAppear {
                 viewModel.fetchRepositories(username: self.username)
             }
+            .alert(item: $viewModel.error) { error in
+                Alert(
+                    title: Text("Oops!"),
+                    message: Text(error.errorDescription),
+                    dismissButton: Alert.Button.default(
+                        Text("OK"), action: { presentationMode.wrappedValue.dismiss()}
+                        )
+                )
+            }
     }
 }
 

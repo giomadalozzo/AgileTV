@@ -12,6 +12,7 @@ class ViewModel: ObservableObject {
     // Fetch the repositories from the API main endpoint
     // - Parameter username: String containing the searched username
     // - Updates avatarLoaded, avatarURL, isEmpty and repositories
+    // - Updates error in case of an error
     func  fetchRepositories(for username: String) async {
         do {     
             self.repositories = try await APIService.shared.fetchRepositories(for: username)
@@ -34,6 +35,7 @@ class ViewModel: ObservableObject {
     // Fetch the avatar URL from the other API endpoint
     // - Parameter username: String containing the searched username
     // - Updates avatarLoaded, avatarURL
+    // - Updates error in case of an error
     /// It is needed, because when the user has no repositories on GitHub, the API returns an empty JSON when using fetchRepositories function
     private func fetchAvatar(for username: String) async {
         do {

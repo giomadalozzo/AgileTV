@@ -11,6 +11,8 @@ struct ProfileView: View {
 
     var body: some View {
         VStack{
+
+            // When loaded the avatar, display the UI. Until then, ProgressView will be displayed
             if viewModel.avatarLoaded {
                 AvatarView(avatarURL: viewModel.avatarURL)
                 Text(username)

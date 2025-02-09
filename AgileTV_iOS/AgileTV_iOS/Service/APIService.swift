@@ -20,7 +20,7 @@ class APIService: APIServiceProtocol {
             self.session = session
         }
     
-
+    // Fetching repositories from API
     func fetchRepositories(for username: String) async throws -> [Repository] {
         let url = "https://api.github.com/users/\(username)/repos"
 
@@ -39,6 +39,7 @@ class APIService: APIServiceProtocol {
         }
     }
 
+    // Fetching the avatar URL from the API (different endpoint)
     func fetchAvatar(for username: String) async throws -> User {
         let url = "https://api.github.com/users/\(username)"
 

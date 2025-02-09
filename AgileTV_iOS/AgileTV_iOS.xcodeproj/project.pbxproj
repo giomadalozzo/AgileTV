@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		299F67572D565BDF0015C99B /* AgileTV_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299F67562D565BDF0015C99B /* AgileTV_iOSApp.swift */; };
 		299F67592D565BDF0015C99B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299F67582D565BDF0015C99B /* HomeView.swift */; };
-		299F675B2D565BE20015C99B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 299F675A2D565BE20015C99B /* Assets.xcassets */; };
-		299F675E2D565BE20015C99B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 299F675D2D565BE20015C99B /* Preview Assets.xcassets */; };
 		299F67832D566E8C0015C99B /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299F67822D566E8C0015C99B /* ProfileView.swift */; };
 		299F67852D5699220015C99B /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299F67842D5699220015C99B /* ViewModel.swift */; };
 		299F67872D569D3E0015C99B /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299F67862D569D3E0015C99B /* Repository.swift */; };
@@ -28,17 +26,11 @@
 		299F67AB2D58AD5C0015C99B /* UserMock.json in Resources */ = {isa = PBXBuildFile; fileRef = 299F67AA2D58AD5C0015C99B /* UserMock.json */; };
 		299F67AD2D58B1D50015C99B /* ViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299F67AC2D58B1D50015C99B /* ViewModelTests.swift */; };
 		299F67AF2D592A7A0015C99B /* APIErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299F67AE2D592A7A0015C99B /* APIErrorTests.swift */; };
+		299F67B62D5938D40015C99B /* Preview Content in Resources */ = {isa = PBXBuildFile; fileRef = 299F67B52D5938D40015C99B /* Preview Content */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		299F67642D565BE20015C99B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 299F674B2D565BDF0015C99B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 299F67522D565BDF0015C99B;
-			remoteInfo = AgileTV_iOS;
-		};
-		299F676E2D565BE20015C99B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 299F674B2D565BDF0015C99B /* Project object */;
 			proxyType = 1;
@@ -51,10 +43,7 @@
 		299F67532D565BDF0015C99B /* AgileTV_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AgileTV_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		299F67562D565BDF0015C99B /* AgileTV_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgileTV_iOSApp.swift; sourceTree = "<group>"; };
 		299F67582D565BDF0015C99B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		299F675A2D565BE20015C99B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		299F675D2D565BE20015C99B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		299F67632D565BE20015C99B /* AgileTV_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AgileTV_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		299F676D2D565BE20015C99B /* AgileTV_iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AgileTV_iOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		299F67822D566E8C0015C99B /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		299F67842D5699220015C99B /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		299F67862D569D3E0015C99B /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
@@ -71,6 +60,7 @@
 		299F67AA2D58AD5C0015C99B /* UserMock.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = UserMock.json; sourceTree = "<group>"; };
 		299F67AC2D58B1D50015C99B /* ViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelTests.swift; sourceTree = "<group>"; };
 		299F67AE2D592A7A0015C99B /* APIErrorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIErrorTests.swift; sourceTree = "<group>"; };
+		299F67B52D5938D40015C99B /* Preview Content */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Preview Content"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,13 +73,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		299F67602D565BE20015C99B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		299F676A2D565BE20015C99B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -113,7 +96,6 @@
 			children = (
 				299F67532D565BDF0015C99B /* AgileTV_iOS.app */,
 				299F67632D565BE20015C99B /* AgileTV_iOSTests.xctest */,
-				299F676D2D565BE20015C99B /* AgileTV_iOSUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -127,18 +109,9 @@
 				299F678C2D569D810015C99B /* Model */,
 				299F678B2D569D770015C99B /* ViewModel */,
 				299F678A2D569D6B0015C99B /* Views */,
-				299F675A2D565BE20015C99B /* Assets.xcassets */,
-				299F675C2D565BE20015C99B /* Preview Content */,
+				299F67B52D5938D40015C99B /* Preview Content */,
 			);
 			path = AgileTV_iOS;
-			sourceTree = "<group>";
-		};
-		299F675C2D565BE20015C99B /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				299F675D2D565BE20015C99B /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		299F67662D565BE20015C99B /* AgileTV_iOSTests */ = {
@@ -273,24 +246,6 @@
 			productReference = 299F67632D565BE20015C99B /* AgileTV_iOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		299F676C2D565BE20015C99B /* AgileTV_iOSUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 299F677D2D565BE20015C99B /* Build configuration list for PBXNativeTarget "AgileTV_iOSUITests" */;
-			buildPhases = (
-				299F67692D565BE20015C99B /* Sources */,
-				299F676A2D565BE20015C99B /* Frameworks */,
-				299F676B2D565BE20015C99B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				299F676F2D565BE20015C99B /* PBXTargetDependency */,
-			);
-			name = AgileTV_iOSUITests;
-			productName = AgileTV_iOSUITests;
-			productReference = 299F676D2D565BE20015C99B /* AgileTV_iOSUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -306,11 +261,6 @@
 					};
 					299F67622D565BE20015C99B = {
 						CreatedOnToolsVersion = 15.0;
-						TestTargetID = 299F67522D565BDF0015C99B;
-					};
-					299F676C2D565BE20015C99B = {
-						CreatedOnToolsVersion = 15.0;
-						LastSwiftMigration = 1500;
 						TestTargetID = 299F67522D565BDF0015C99B;
 					};
 				};
@@ -333,7 +283,6 @@
 			targets = (
 				299F67522D565BDF0015C99B /* AgileTV_iOS */,
 				299F67622D565BE20015C99B /* AgileTV_iOSTests */,
-				299F676C2D565BE20015C99B /* AgileTV_iOSUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -343,8 +292,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				299F675E2D565BE20015C99B /* Preview Assets.xcassets in Resources */,
-				299F675B2D565BE20015C99B /* Assets.xcassets in Resources */,
+				299F67B62D5938D40015C99B /* Preview Content in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,13 +302,6 @@
 			files = (
 				299F67AB2D58AD5C0015C99B /* UserMock.json in Resources */,
 				299F67A92D58A34B0015C99B /* RepositoriesMock.json in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		299F676B2D565BE20015C99B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,13 +338,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		299F67692D565BE20015C99B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -411,11 +345,6 @@
 			isa = PBXTargetDependency;
 			target = 299F67522D565BDF0015C99B /* AgileTV_iOS */;
 			targetProxy = 299F67642D565BE20015C99B /* PBXContainerItemProxy */;
-		};
-		299F676F2D565BE20015C99B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 299F67522D565BDF0015C99B /* AgileTV_iOS */;
-			targetProxy = 299F676E2D565BE20015C99B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -637,47 +566,6 @@
 			};
 			name = Release;
 		};
-		299F677E2D565BE20015C99B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 42978H3GP3;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Giovanni.Madalozzo.AgileTV-iOSUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_OBJC_BRIDGING_HEADER = "AgileTV_iOSUITests/AgileTV_iOSUITests-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = AgileTV_iOS;
-			};
-			name = Debug;
-		};
-		299F677F2D565BE20015C99B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 42978H3GP3;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Giovanni.Madalozzo.AgileTV-iOSUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_OBJC_BRIDGING_HEADER = "AgileTV_iOSUITests/AgileTV_iOSUITests-Bridging-Header.h";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = AgileTV_iOS;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -704,15 +592,6 @@
 			buildConfigurations = (
 				299F677B2D565BE20015C99B /* Debug */,
 				299F677C2D565BE20015C99B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		299F677D2D565BE20015C99B /* Build configuration list for PBXNativeTarget "AgileTV_iOSUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				299F677E2D565BE20015C99B /* Debug */,
-				299F677F2D565BE20015C99B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

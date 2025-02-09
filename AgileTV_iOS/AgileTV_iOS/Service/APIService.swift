@@ -4,19 +4,22 @@ import Alamofire
 // APIService class: responsable for doing the requests into the API endpoint
 // - Timeout configuration inside the init()
 // - Error cases treated (200..<300, 404 and generic errors)
-/// Using APIServiceProtocol to be able to unit test the APIService class
+/// Using APIServiceProtocol and init with Session to be able to unit test the APIService class
 class APIService: APIServiceProtocol {
     
     static let shared = APIService() // Singleton for reusage
 
     private let session: Session
 
-    private init() {
-        let configuration = URLSessionConfiguration.default
-        configuration.timeoutIntervalForRequest = 25
-        configuration.timeoutIntervalForResource = 25
-        session = Session(configuration: configuration)
-    }
+    init(session: Session = {
+            let configuration = URLSessionConfiguration.default
+            configuration.timeoutIntervalForRequest = 25
+            configuration.timeoutIntervalForResource = 25
+            return Session(configuration: configuration)
+        }()) {
+            self.session = session
+        }
+    
 
     func fetchRepositories(for username: String) async throws -> [Repository] {
         let url = "https://api.github.com/users/\(username)/repos"

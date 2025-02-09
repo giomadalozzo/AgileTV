@@ -1,5 +1,4 @@
 import Foundation
-import Alamofire
 
 // I chose to use Alamofire for the HTTP request because it simplifies error handling
 // and the direct decoding of data into structs.
